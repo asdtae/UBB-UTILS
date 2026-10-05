@@ -5,59 +5,239 @@
 <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <table>
-        <!-- Monday -->
-        <tr></tr>
-        <tr>
-            <th>Algo1 (SANDOR Reka) 5/I</th>
-        </tr>
-        <tr>
-            <th>Algo1 (SANDOR Reka) 5/I</th>
-        </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr>
-            <th>Algo1 (SANDOR Reka) 5/I</th>
-            <th>Algo1 (SANDOR Reka) 5/I</th>
-        </tr>
+<body class="bg-slate-50 min-h-screen p-4 md:p-8 font-sans text-slate-800 antialiased">
+<div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
 
-        <!-- Thursday -->
-        <tr>
-            <th>Logika (KOLUMBAN Sandor) 7/I</th>
-        </tr>
-        <tr>
-            <th>Psiho (GERGELY Roland) <a>Lab I - Alkalmazott Pszichológia Intézet</a></th>
-        </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
+    <!-- Header Section -->
+    <div class="bg-slate-900 px-6 py-8 md:px-8">
+        <h1 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Orar Anul 1 Informatică</h1>
+        <p class="mt-2 text-slate-400 font-medium">Linia de studiu maghiară (Grupa 511) • Semestrul 1 • 2026/2027</p>
+    </div>
 
-        <!-- Wednesday -->
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
+    <!-- Timetable -->
+    <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left border-collapse min-w-[600px]">
+            <thead class="bg-slate-50 border-b border-slate-200 text-slate-500 uppercase text-xs font-semibold tracking-wider">
+            <tr>
+                <th class="px-6 py-4 w-24 border-r border-slate-200">Ziua</th>
+                <th class="px-6 py-4 w-32 border-r border-slate-200">Orele</th>
+                <th class="px-6 py-4">Activitate & Profesor</th>
+                <th class="px-6 py-4 w-32 text-right">Sala</th>
+            </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
 
-        <!-- Thursday -->
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
+            <!-- LUNI -->
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td rowspan="3" class="px-6 py-4 font-bold text-slate-900 border-r border-slate-200 align-top bg-slate-50/50">Luni</td>
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">10:00 - 14:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Algoritmi fundamentali</p>
+                    <p class="text-slate-500 text-xs mt-0.5">SANDOR Reka</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">5/I</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">16:00 - 18:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Algoritmi fundamentali <span class="text-slate-400 font-normal text-xs ml-1">(511/1)</span></p>
+                    <p class="text-slate-500 text-xs mt-0.5">SANDOR Reka</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">L402</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">18:00 - 20:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Algoritmi fundamentali <span class="text-slate-400 font-normal text-xs ml-1">(511/2)</span></p>
+                    <p class="text-slate-500 text-xs mt-0.5">SANDOR Reka</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">L402</span>
+                </td>
+            </tr>
 
-        <!-- Friday -->
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-    </table>
+            <!-- MARTI -->
+            <tr class="hover:bg-slate-50 transition-colors border-t-2 border-slate-200">
+                <td rowspan="6" class="px-6 py-4 font-bold text-slate-900 border-r border-slate-200 align-top bg-slate-50/50">Marți</td>
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">08:00 - 10:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Logica matematică și computațională</p>
+                    <p class="text-slate-500 text-xs mt-0.5">KOLUMBAN Sandor</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">7/I</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">10:00 - 12:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Psihologia educației</p>
+                    <p class="text-slate-500 text-xs mt-0.5">GERGELY Roland</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-slate-100 px-2 py-1 text-xs font-medium text-slate-600 ring-1 ring-inset ring-slate-500/10">Neprecizat</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">12:00 - 14:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Arhitectura sistemelor de calcul</p>
+                    <p class="text-slate-500 text-xs mt-0.5">SANDOR Csanad</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">C335</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">14:00 - 16:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Arhitectura sistemelor de calcul <span class="bg-amber-100 text-amber-800 text-[10px] uppercase font-bold px-1.5 py-0.5 rounded ml-2">Săpt. 2</span></p>
+                    <p class="text-slate-500 text-xs mt-0.5">SANDOR Csanad</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">DC405</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">16:00 - 18:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Arhitectura sistemelor de calcul <span class="text-slate-400 font-normal text-xs ml-1">(511/1)</span></p>
+                    <p class="text-slate-500 text-xs mt-0.5">SANDOR Csanad</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">L404</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">18:00 - 20:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Arhitectura sistemelor de calcul <span class="text-slate-400 font-normal text-xs ml-1">(511/2)</span></p>
+                    <p class="text-slate-500 text-xs mt-0.5">SANDOR Csanad</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">L404</span>
+                </td>
+            </tr>
+
+            <!-- MIERCURI -->
+            <tr class="hover:bg-slate-50 transition-colors border-t-2 border-slate-200">
+                <td rowspan="3" class="px-6 py-4 font-bold text-slate-900 border-r border-slate-200 align-top bg-slate-50/50">Miercuri</td>
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">08:00 - 10:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Fundamentele programării <span class="bg-amber-100 text-amber-800 text-[10px] uppercase font-bold px-1.5 py-0.5 rounded ml-2">Săpt. 1 & 2</span></p>
+                    <p class="text-slate-500 text-xs mt-0.5">MOLNAR Botond</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">L404</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">10:00 - 12:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Algebră</p>
+                    <p class="text-slate-500 text-xs mt-0.5">SZOLLOSI Istvan</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">C512</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">16:00 - 18:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Psihologia educației</p>
+                    <p class="text-slate-500 text-xs mt-0.5">SULYOK Karmen</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">KuTi</span>
+                </td>
+            </tr>
+
+            <!-- JOI -->
+            <tr class="hover:bg-slate-50 transition-colors border-t-2 border-slate-200">
+                <td rowspan="3" class="px-6 py-4 font-bold text-slate-900 border-r border-slate-200 align-top bg-slate-50/50">Joi</td>
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">08:00 - 10:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Calcul diferențial și integral</p>
+                    <p class="text-slate-500 text-xs mt-0.5">FINTA Zoltan</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Gamma</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">10:00 - 12:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Calcul diferențial și integral</p>
+                    <p class="text-slate-500 text-xs mt-0.5">SCHEFLER Barna</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Pi</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">16:00 - 18:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Fundamentele programării</p>
+                    <p class="text-slate-500 text-xs mt-0.5">MOLNAR Botond</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">5/I</span>
+                </td>
+            </tr>
+
+            <!-- VINERI -->
+            <tr class="hover:bg-slate-50 transition-colors border-t-2 border-slate-200">
+                <td rowspan="4" class="px-6 py-4 font-bold text-slate-900 border-r border-slate-200 align-top bg-slate-50/50">Vineri</td>
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">08:00 - 10:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Algebră</p>
+                    <p class="text-slate-500 text-xs mt-0.5">SCHEFLER Barna</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">A312</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">10:00 - 12:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Logica matematică și computațională</p>
+                    <p class="text-slate-500 text-xs mt-0.5">MIHALY Sarolta</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">A312</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">14:00 - 16:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Metode avansate de rezolvare a problemelor de informatică</p>
+                    <p class="text-slate-500 text-xs mt-0.5">PATCAS Csaba</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Multimedia</span>
+                </td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-4 whitespace-nowrap text-slate-600 font-medium border-r border-slate-200">16:00 - 18:00</td>
+                <td class="px-6 py-4">
+                    <p class="font-semibold text-slate-900">Metode avansate de rezolvare a problemelor de informatică <span class="bg-amber-100 text-amber-800 text-[10px] uppercase font-bold px-1.5 py-0.5 rounded ml-2">Săpt. 1 & 2</span></p>
+                    <p class="text-slate-500 text-xs mt-0.5">PATCAS Csaba</p>
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Multimedia</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 </body>
 </html>
